@@ -1,3 +1,8 @@
+
+/**
+ * VALIDACIONS DE RESPUESTAS
+ */
+
 function validarRespuesta() {
     var respuestaCorrecta = "budapest";
     var respuestaUsuario = document.getElementById("respuesta").value.toLowerCase();
@@ -25,22 +30,40 @@ function validarRespuestaPrueba2() {
     }
 }
 
+/**
+ * DESBLOQUEAR PRUEBAS
+ */
 
 function desbloquearPrueba(numPrueba) {
     var seccionPruebaActual = document.getElementById("prueba" + numPrueba);
     var botonCandado = seccionPruebaActual.querySelector(".candado");
 
-    // Cambia el texto del botón para indicar que se puede abrir la prueba
-    botonCandado.innerHTML = "🔓 Prueba " + numPrueba;
-    botonCandado.style.backgroundColor = "green"; // Cambia el color de fondo a verde
-    botonCandado.onclick = function() { mostrarContenidoPrueba(numPrueba); }; // Actualiza el evento onclick para mostrar el contenido
+    // Actualiza el texto y el estilo del botón candado para indicar que la sección puede ser desbloqueada
+    botonCandado.innerHTML = "🔓 Prueba " + numPrueba + " Desbloqueada - Haz clic para abrir";
+    botonCandado.style.backgroundColor = "green";
+    botonCandado.style.color = "black"; // Cambia el color del texto a negro
+    botonCandado.disabled = false;
+
+    // Añade un evento de clic al botón del candado para desbloquear la prueba
+    botonCandado.addEventListener("click", function() {
+        mostrarPrueba(numPrueba);
+    });
 }
+
+
+/**
+ * MOSTRAR CONTENIDOS DE LAS PRUEBAS
+ */
 
 function mostrarContenidoPrueba(numPrueba) {
     var seccionPruebaActual = document.getElementById("prueba" + numPrueba);
+    var botonCandado = seccionPruebaActual.querySelector(".candado");
     var contenidoPrueba = seccionPruebaActual.querySelector(".contenido-prueba" + numPrueba);
 
-    // Muestra el contenido de la prueba y esconde el botón del candado
+    // Muestra el contenido de la prueba y cambia el estilo del botón candado
+    botonCandado.style.display = "none";
     contenidoPrueba.style.display = "block";
-    seccionPruebaActual.querySelector(".candado").style.display = "none";
 }
+
+
+

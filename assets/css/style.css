@@ -84,23 +84,33 @@ margin-top: 40px;
 
 /*SECCION DE PSITAS BLOQUEADAS*/
 
+.bloqueada {
+    background-color: #f8d7da; /* Un fondo rojo claro para indicar que está bloqueado */
+    color: #721c24;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 .bloqueada .candado {
-    background-color: red; /* Color inicial cuando está bloqueado */
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease-in-out;
+    font-size: 2rem; /* Hacer el candado más grande para que sea claro que está bloqueado */
+    padding: 20px;
 }
 
-.bloqueada .candado:hover {
-    background-color: darkred; /* Oscurecer el rojo al pasar el ratón por encima */
+
+.desbloqueda {
+    background-color: #158324e7; /* Un fondo rojo claro para indicar que está bloqueado */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Cuando el botón de candado se vuelve clickeable después de desbloquear */
-.candado {
-    background-color: green; /* Verde para indicar que es clickeable/desbloqueado */
-    cursor: pointer;
+.desbloqueda .candado{
+    font-size: 2rem; /* Hacer el candado más grande para que sea claro que está bloqueado */
+    padding: 20px;
 }
