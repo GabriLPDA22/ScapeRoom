@@ -80,3 +80,27 @@ width: 100%;
 clear: both;
 margin-top: 40px; 
 }
+
+
+/*SECCION DE PSITAS BLOQUEADAS*/
+
+.bloqueada .candado {
+    background-color: red; /* Color inicial cuando está bloqueado */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.bloqueada .candado:hover {
+    background-color: darkred; /* Oscurecer el rojo al pasar el ratón por encima */
+}
+
+/* Cuando el botón de candado se vuelve clickeable después de desbloquear */
+.candado {
+    background-color: green; /* Verde para indicar que es clickeable/desbloqueado */
+    cursor: pointer;
+}

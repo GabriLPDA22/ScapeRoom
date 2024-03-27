@@ -31,21 +31,30 @@
                 importante centro durante la época del Imperio Austrohúngaro. <i>S</i>us calles y avenidas <i>valen</i>
                 la pena explorar, y su rica historia <i>ero</i>ica es conmemorada en <i>c</i>ada esquina". En esta
                 metrópolis, los cafés ofrecen no solo delicias locales sino también conexiones a la red, ideal para
-                quien busque <i>@</i> <i>svalero.com</i>unicarse o investigar.</p>
-            <p>Aquí va el texto de la primera pista.</p>
+                quien busque <i>@</i> <i>svalero.com</i>unicarse o investigar.
+            </p>
             <input type="text" id="respuesta" placeholder="Ingresa tu respuesta aquí">
             <button onclick="validarRespuesta()">Enviar</button>
             <p id="feedback"></p>
         </section>
 
-        <!-- Prueba 2: Descifrar datos de una red -->
-        <section id="prueba2">
-            <!-- Incorporar mapa interactivo y posiblemente imágenes del lugar -->
+        <!-- Prueba 2: Inicialmente bloqueada -->
+        <section id="prueba2" class="bloqueada">
+            <button class="candado" onclick="mostrarPrueba(2)">🔒 Prueba 2</button>
+            <div class="contenido-prueba2" style="display: none;">
+                <!-- Contenido de la Prueba 2... -->
+                <input type="text" id="respuestaPrueba2" placeholder="Ingresa la respuesta aquí">
+                <button onclick="validarRespuestaPrueba2()">Enviar</button>
+                <p id="feedbackPrueba2"></p>
+            </div>
         </section>
 
-        <!-- Prueba 3: GitHub -->
-        <section id="prueba3">
-            <!-- Incluir instrucciones y enlace al repositorio de GitHub -->
+        <!-- Prueba 3: Inicialmente bloqueada -->
+        <section id="prueba3" class="bloqueada">
+            <div class="candado">🔒 Prueba 3 está bloqueada. Completa la Prueba 2 para continuar.</div>
+            <div class="contenido-prueba3" style="display: none;">
+                <!-- Contenido de la Prueba 3... -->
+            </div>
         </section>
 
         <!-- Prueba 4: Descifra la IP -->
@@ -74,6 +83,7 @@
     </footer>
 
     <script src="/assets/scripts/validador.js"></script>
+    <script src=""></script>
 </body>
 
 </html>
