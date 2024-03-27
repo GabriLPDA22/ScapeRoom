@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Aplicar la fuente a todos los elementos */
+    cursor: pointer;
 }
 
 body {
