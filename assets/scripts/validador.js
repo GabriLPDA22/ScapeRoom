@@ -80,21 +80,21 @@ function validarRespuestaPrueba4() {
 
             // Mover el botón debajo del mensaje de "GAME OVER"
             gameOverDiv.insertAdjacentElement("afterend", intentarDenuevoBtn);
+
+            // Mostrar el botón después de 5 segundos
+            setTimeout(function() {
+                intentarDenuevoBtn.style.display = "block";
+            }, 5000);
         } else {
             document.getElementById("feedbackPrueba4").innerHTML = "Respuesta incorrecta, intenta de nuevo.";
         }
     }
-
-    setTimeout(function() {
-        document.getElementById("intentarDenuevoBtn").style.display = "block";
-    }, 10000);
-    
 }
+
 
 /**
  * REINICIO
  */
-
 function reiniciarEscapeRoom() {
     // Ocultar el mensaje de "GAME OVER" y el botón "Intentar de Nuevo"
     document.getElementById("gameOver").style.display = "none";
