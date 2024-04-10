@@ -91,7 +91,21 @@ function validarRespuestaPrueba4() {
     
 }
 
+/**
+ * REINICIO
+ */
 
+function reiniciarEscapeRoom() {
+    // Ocultar el mensaje de "GAME OVER" y el botón "Intentar de Nuevo"
+    document.getElementById("gameOver").style.display = "none";
+    document.getElementById("intentarDenuevoBtn").style.display = "none";
+
+    // Reiniciar el contador de intentos fallidos
+    intentosFallidos = 0;
+
+    // Restaurar cualquier otro estado que necesite ser restablecido
+    // Por ejemplo, puedes reiniciar el contenido de los campos de texto o restablecer el progreso del juego
+}
 
 /**
  * DESBLOQUEAR PRUEBAS
