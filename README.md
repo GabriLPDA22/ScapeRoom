@@ -2,21 +2,31 @@
 
 Este repositorio alberga los retos y enigmas del Escape Room diseñado para poner a prueba tus habilidades de resolución de problemas y desciframiento de códigos. A lo largo de este juego, enfrentarás desafíos que te llevarán a través de una serie de pruebas, cada una diseñada para ser más intrigante que la anterior.
 
-## Tecnologías Utilizadas
+## 🛠️ Stack Tecnológico
 
-- **HTML & CSS**: Para crear una experiencia interactiva y visualmente atractiva.
-- **JavaScript**: Para añadir interactividad y dinamismo a los retos.
-- **Código Morse**: Como método de cifrado para uno de los desafíos clave.
+En este proyecto hemos utilizado estas tecnologías:
 
-## Contenidos
+- ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white) - Estructura de las páginas web.
+- ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white) - Estilos de las páginas.
+- ![JavaScript](https://img.shields.io/badge/javascript-%23F7DF1E.svg?&style=for-the-badge&logo=javascript&logoColor=black) - Funcionalidad del cliente.
+
+## Prueba 3
 
 - [Desafío de Código Morse](#desafío-de-código-morse)
 
 ---
 
-## Desafío de Código Morse
+## Desafío de Prueba 3
 
-Bienvenidos al desafío de código Morse del Escape Room. Este archivo contiene una pista crucial que necesitarás descifrar para avanzar en el juego. Prepárate para poner a prueba tus habilidades de descifrado y resolver el misterio.
+Para aquellos que han llegado hasta aquí, la Prueba 3 os espera. Es un reto que pondrá a prueba vuestra capacidad de descifrar códigos antiguos usando herramientas modernas.
+
+### Encuentra la Pista
+
+La pista para la Prueba 3 está cuidadosamente escondida dentro de este repositorio. ¿Podrás encontrarla y descifrar su significado?
+
+[Descubre la Prueba 3](#descifra-el-código)
+
+---
 
 ### Código Morse
 
