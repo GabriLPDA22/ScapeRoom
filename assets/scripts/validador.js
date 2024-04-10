@@ -71,25 +71,23 @@ function validarRespuestaPrueba4() {
             document.body.appendChild(gameOverDiv);
 
             // Crear el botón para intentar de nuevo
-            var intentarDenuevoBtn = document.createElement("button");
-            intentarDenuevoBtn.textContent = "Intentar de Nuevo";
-            intentarDenuevoBtn.onclick = function() {
-                reiniciarEscapeRoom(); // Función para reiniciar el escape room
-            };
-            document.body.appendChild(intentarDenuevoBtn);
-
-            // Mover el botón debajo del mensaje de "GAME OVER"
-            gameOverDiv.insertAdjacentElement("afterend", intentarDenuevoBtn);
-
-            // Mostrar el botón después de 5 segundos
             setTimeout(function() {
-                intentarDenuevoBtn.style.display = "block";
+                var intentarDenuevoBtn = document.createElement("button");
+                intentarDenuevoBtn.id = "intentarDenuevoBtn";
+                intentarDenuevoBtn.textContent = "Intentar de Nuevo";
+                intentarDenuevoBtn.onclick = function() {
+                    window.location.reload(); // Recargar la página
+                };
+                gameOverDiv.insertAdjacentElement("afterend", intentarDenuevoBtn);
             }, 5000);
         } else {
             document.getElementById("feedbackPrueba4").innerHTML = "Respuesta incorrecta, intenta de nuevo.";
-        }
+        } 
     }
 }
+
+
+
 
 
 /**
