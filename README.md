@@ -28,7 +28,7 @@ La pista para la Prueba 3 está cuidadosamente escondida dentro de este reposito
 
 Aquí tienes el código que necesitas descifrar:
 
-.--. .-. ..- . -... .- / - .-. . ...
+".--. .-. ..- . -... .- / - .-. . ... / .- -.-. . .-. - .- -.. .-"
 
 Este código es una pieza clave en tu aventura. Descifrarlo te revelará la información necesaria para avanzar al siguiente nivel del escape room.
 
@@ -47,6 +47,9 @@ Para ayudarte a comenzar, aquí tienes la equivalencia de algunas letras:
 - C: `-.-.`
 - D: `-..`
 - E: `.`
+- R: `.-.`
+- T: `-`
+- D: `-..` 
 
 Te animamos a investigar más sobre el código Morse y utilizar tus habilidades deductivas para descifrar el mensaje completo.
 
