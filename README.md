@@ -10,11 +10,9 @@ En este proyecto hemos utilizado estas tecnologías:
 - ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white) - Estilos de las páginas.
 - ![JavaScript](https://img.shields.io/badge/javascript-%23F7DF1E.svg?&style=for-the-badge&logo=javascript&logoColor=black) - Funcionalidad del cliente.
 
-## Prueba 3
 
-- [Desafío de Código Morse](#desafío-de-código-morse)
 
----
+
 
 ## Desafío de Prueba 3
 
@@ -24,8 +22,6 @@ Para aquellos que han llegado hasta aquí, la Prueba 3 os espera. Es un reto que
 
 La pista para la Prueba 3 está cuidadosamente escondida dentro de este repositorio. ¿Podrás encontrarla y descifrar su significado?
 
-[Descubre la Prueba 3](#descifra-el-código)
-
 ---
 
 ### Código Morse
@@ -33,7 +29,6 @@ La pista para la Prueba 3 está cuidadosamente escondida dentro de este reposito
 Aquí tienes el código que necesitas descifrar:
 
 .--. .-. ..- . -... .- / - .-. . ...
-
 
 Este código es una pieza clave en tu aventura. Descifrarlo te revelará la información necesaria para avanzar al siguiente nivel del escape room.
 
