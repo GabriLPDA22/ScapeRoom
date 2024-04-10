@@ -46,6 +46,14 @@ function validarRespuestaPrueba3() {
 
 var intentosFallidos = 0; // Contador de intentos fallidos
 
+// Mensajes de retroalimentación para respuestas incorrectas
+var mensajesIncorrectos = [
+    "Respuesta incorrecta, intenta de nuevo.",
+    "¡Casi! Pero esa no es la respuesta correcta. Inténtalo de nuevo.",
+    "Esa no es la respuesta correcta. Sigue intentándolo.",
+    "Oh no, esa no es la respuesta. Pero no te rindas, puedes hacerlo."
+];
+
 function validarRespuestaPrueba4() {
     var respuestaCorrectaPrueba4 = "clase c, bits 8"; // Asumiendo que esta es la respuesta correcta
     var respuestaUsuarioPrueba4 = document.getElementById("respuestaPrueba4").value.toLowerCase();
@@ -79,9 +87,11 @@ function validarRespuestaPrueba4() {
                     window.location.reload(); // Recargar la página
                 };
                 gameOverDiv.insertAdjacentElement("afterend", intentarDenuevoBtn);
-            }, 5000);
+            }, 1500);
         } else {
-            document.getElementById("feedbackPrueba4").innerHTML = "Respuesta incorrecta, intenta de nuevo.";
+            // Mensaje de retroalimentación aleatorio para respuestas incorrectas
+            var mensajeAleatorio = mensajesIncorrectos[Math.floor(Math.random() * mensajesIncorrectos.length)];
+            document.getElementById("feedbackPrueba4").innerHTML = mensajeAleatorio;
         } 
     }
 }
