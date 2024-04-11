@@ -55,7 +55,7 @@ var mensajesIncorrectos = [
 ];
 
 function validarRespuestaPrueba4() {
-    var respuestaCorrectaPrueba4 = "clase c, bits 8"; // Asumiendo que esta es la respuesta correcta
+    var respuestaCorrectaPrueba4 = "clase c y 8 bits"; // Asumiendo que esta es la respuesta correcta
     var respuestaUsuarioPrueba4 = document.getElementById("respuestaPrueba4").value.toLowerCase();
 
     if (respuestaUsuarioPrueba4 === respuestaCorrectaPrueba4) {
@@ -96,6 +96,30 @@ function validarRespuestaPrueba4() {
     }
 }
 
+function validarRespuestaPrueba5() {
+    var respuestaCorrectaPrueba5 = "el castillo de buda es impresionante"; // Asumiendo que esta es la respuesta correcta
+    var respuestaUsuarioPrueba5 = document.getElementById("respuestaPrueba5").value.toLowerCase();
+
+    if (respuestaUsuarioPrueba5 === respuestaCorrectaPrueba5) {
+        document.getElementById("feedbackPrueba5").innerHTML = "¡Correcto! La Prueba 6 está desbloqueada.";
+        desbloquearPrueba(5);
+    } else {
+        document.getElementById("feedbackPrueba5").innerHTML = "Respuesta incorrecta, intenta de nuevo.";
+    }
+}
+
+
+function validarRespuestaPrueba6() {
+    var respuestasCorrectasPrueba6 = ["procesador", "placa base"]; // Lista de respuestas correctas
+    var respuestaUsuarioPrueba6 = document.getElementById("respuestaPrueba6").value.toLowerCase();
+
+    if (respuestasCorrectasPrueba6.includes(respuestaUsuarioPrueba6)) {
+        document.getElementById("feedbackPrueba6").innerHTML = "¡Correcto! La Prueba 7 está desbloqueada.";
+        desbloquearPrueba(6);
+    } else {
+        document.getElementById("feedbackPrueba6").innerHTML = "Respuesta incorrecta, intenta de nuevo.";
+    }
+}
 
 
 /**
