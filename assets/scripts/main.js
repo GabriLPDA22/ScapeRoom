@@ -185,5 +185,5 @@ function cerrarMensajeExito() {
 function mostrarMensajeExitoConRetraso() {
     setTimeout(function () {
         document.getElementById("exitoPrueba6").style.display = "flex";
-    }, 1500); // 2000 milisegundos = 2 segundos
+    }, 1000); // 2000 milisegundos = 2 segundos
 }
