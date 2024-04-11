@@ -102,7 +102,7 @@ function validarRespuestaPrueba5() {
 
     if (respuestaUsuarioPrueba5 === respuestaCorrectaPrueba5) {
         document.getElementById("feedbackPrueba5").innerHTML = "¡Correcto! La Prueba 6 está desbloqueada.";
-        desbloquearPrueba(5);
+        desbloquearPrueba(6);
     } else {
         document.getElementById("feedbackPrueba5").innerHTML = "Respuesta incorrecta, intenta de nuevo.";
     }
@@ -115,7 +115,7 @@ function validarRespuestaPrueba6() {
 
     if (respuestasCorrectasPrueba6.includes(respuestaUsuarioPrueba6)) {
         document.getElementById("feedbackPrueba6").innerHTML = "¡Correcto! La Prueba 7 está desbloqueada.";
-        desbloquearPrueba(6);
+        desbloquearPrueba(7);
     } else {
         document.getElementById("feedbackPrueba6").innerHTML = "Respuesta incorrecta, intenta de nuevo.";
     }
