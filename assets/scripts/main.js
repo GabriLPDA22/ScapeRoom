@@ -114,7 +114,7 @@ function validarRespuestaPrueba6() {
     var respuestaUsuarioPrueba6 = document.getElementById("respuestaPrueba6").value.toLowerCase();
 
     if (respuestasCorrectasPrueba6.includes(respuestaUsuarioPrueba6)) {
-        document.getElementById("feedbackPrueba6").innerHTML = "¡Correcto! La Prueba 7 está desbloqueada.";
+        document.getElementById("feedbackPrueba6").innerHTML = "¡Correcto!";
         desbloquearPrueba(7);
     } else {
         document.getElementById("feedbackPrueba6").innerHTML = "Respuesta incorrecta, intenta de nuevo.";
@@ -161,3 +161,24 @@ function mostrarContenidoPrueba(numPrueba) {
 }
 
 
+/**
+ * EXITO
+ * 
+ */
+
+       // Función para mostrar el mensaje de éxito
+       function mostrarMensajeExito() {
+        document.getElementById("exitoPrueba7").style.display = "flex";
+    }
+
+    // Función para cerrar el mensaje de éxito y continuar con el escape room
+    function cerrarMensajeExito() {
+        document.getElementById("exitoPrueba7").style.display = "none";
+        // Aquí puedes agregar cualquier otra lógica que necesites ejecutar
+        // cuando el usuario cierra el mensaje de éxito.
+    }
+
+    // Mostramos el mensaje de éxito automáticamente
+    window.onload = function() {
+        mostrarMensajeExito();
+    };
