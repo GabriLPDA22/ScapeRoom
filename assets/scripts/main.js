@@ -115,11 +115,13 @@ function validarRespuestaPrueba6() {
 
     if (respuestasCorrectasPrueba6.includes(respuestaUsuarioPrueba6)) {
         document.getElementById("feedbackPrueba6").innerHTML = "¡Correcto!";
-        desbloquearPrueba(7);
+        //desbloquearPrueba(6);
+        mostrarMensajeExitoConRetraso(); // Aquí se llama a la función para mostrar el mensaje de éxito con retraso
     } else {
         document.getElementById("feedbackPrueba6").innerHTML = "Respuesta incorrecta, intenta de nuevo.";
     }
 }
+
 
 
 /**
@@ -178,7 +180,10 @@ function mostrarContenidoPrueba(numPrueba) {
         // cuando el usuario cierra el mensaje de éxito.
     }
 
-    // Mostramos el mensaje de éxito automáticamente
-    window.onload = function() {
-        mostrarMensajeExito();
-    };
+
+    // Función para mostrar el mensaje de éxito con retraso
+function mostrarMensajeExitoConRetraso() {
+    setTimeout(function() {
+        document.getElementById("exitoPrueba6").style.display = "flex";
+    }, 2000); // 2000 milisegundos = 2 segundos
+}
