@@ -79,11 +79,11 @@ function validarRespuestaPrueba4() {
             document.body.appendChild(gameOverDiv);
 
             // Crear el botón para intentar de nuevo
-            setTimeout(function() {
+            setTimeout(function () {
                 var intentarDenuevoBtn = document.createElement("button");
                 intentarDenuevoBtn.id = "intentarDenuevoBtn";
                 intentarDenuevoBtn.textContent = "Intentar de Nuevo";
-                intentarDenuevoBtn.onclick = function() {
+                intentarDenuevoBtn.onclick = function () {
                     window.location.reload(); // Recargar la página
                 };
                 gameOverDiv.insertAdjacentElement("afterend", intentarDenuevoBtn);
@@ -92,7 +92,7 @@ function validarRespuestaPrueba4() {
             // Mensaje de retroalimentación aleatorio para respuestas incorrectas
             var mensajeAleatorio = mensajesIncorrectos[Math.floor(Math.random() * mensajesIncorrectos.length)];
             document.getElementById("feedbackPrueba4").innerHTML = mensajeAleatorio;
-        } 
+        }
     }
 }
 
@@ -141,7 +141,7 @@ function desbloquearPrueba(numPrueba) {
     botonCandado.disabled = false;
 
     // Añade un evento de clic al botón del candado para desbloquear la prueba    
-    seccionPruebaActual.addEventListener("click", function() {                
+    seccionPruebaActual.addEventListener("click", function () {
         mostrarContenidoPrueba(numPrueba);
     });
 }
@@ -151,7 +151,7 @@ function desbloquearPrueba(numPrueba) {
  * MOSTRAR CONTENIDOS DE LAS PRUEBAS
  */
 
-function mostrarContenidoPrueba(numPrueba) {    
+function mostrarContenidoPrueba(numPrueba) {
     var seccionPruebaActual = document.getElementById("prueba" + numPrueba);
     var botonCandado = seccionPruebaActual.querySelector(".candado");
     var contenidoPrueba = seccionPruebaActual.querySelector(".contenido-prueba" + numPrueba);
@@ -168,22 +168,22 @@ function mostrarContenidoPrueba(numPrueba) {
  * 
  */
 
-       // Función para mostrar el mensaje de éxito
-       function mostrarMensajeExito() {
-        document.getElementById("exitoPrueba6").style.display = "flex";
-    }
+// Función para mostrar el mensaje de éxito
+function mostrarMensajeExito() {
+    document.getElementById("exitoPrueba6").style.display = "flex";
+}
 
-    // Función para cerrar el mensaje de éxito y continuar con el escape room
-    function cerrarMensajeExito() {
-        document.getElementById("exitoPrueba6").style.display = "none";
-        // Aquí puedes agregar cualquier otra lógica que necesites ejecutar
-        // cuando el usuario cierra el mensaje de éxito.
-    }
+// Función para cerrar el mensaje de éxito y continuar con el escape room
+function cerrarMensajeExito() {
+    document.getElementById("exitoPrueba6").style.display = "none";
+    // Aquí puedes agregar cualquier otra lógica que necesites ejecutar
+    // cuando el usuario cierra el mensaje de éxito.
+}
 
 
-    // Función para mostrar el mensaje de éxito con retraso
+// Función para mostrar el mensaje de éxito con retraso
 function mostrarMensajeExitoConRetraso() {
-    setTimeout(function() {
+    setTimeout(function () {
         document.getElementById("exitoPrueba6").style.display = "flex";
     }, 2000); // 2000 milisegundos = 2 segundos
 }
