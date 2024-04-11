@@ -168,12 +168,12 @@ function mostrarContenidoPrueba(numPrueba) {
 
        // Función para mostrar el mensaje de éxito
        function mostrarMensajeExito() {
-        document.getElementById("exitoPrueba7").style.display = "flex";
+        document.getElementById("exitoPrueba6").style.display = "flex";
     }
 
     // Función para cerrar el mensaje de éxito y continuar con el escape room
     function cerrarMensajeExito() {
-        document.getElementById("exitoPrueba7").style.display = "none";
+        document.getElementById("exitoPrueba6").style.display = "none";
         // Aquí puedes agregar cualquier otra lógica que necesites ejecutar
         // cuando el usuario cierra el mensaje de éxito.
     }
